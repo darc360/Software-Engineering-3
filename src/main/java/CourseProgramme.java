@@ -67,4 +67,8 @@ public class CourseProgramme {
     public String toString(){
         return courseName;
     }
+    public String getInfo(){
+        return "Course:"+courseName + " Start Date:" + start +" End Date:"+ end;
+
+    }
 }

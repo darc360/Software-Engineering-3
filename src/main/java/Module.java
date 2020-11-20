@@ -55,4 +55,7 @@ public class Module {
     public String toString(){
         return moduleName;
     }
+    public String getInfo(){
+        return "Module:"+moduleName + " ID" + ID;
+    }
 }

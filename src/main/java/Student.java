@@ -76,4 +76,7 @@ public class Student {
     public String toString(){
         return Name;
     }
+    public String getInfo(){
+        return  "Name:"+Name+" Age:"+Age +" ID"+ ID;
+    }
 }
