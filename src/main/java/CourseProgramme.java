@@ -1,6 +1,9 @@
 //Written By Darcie Howley
 //libraries
 import org.joda.time.DateTime;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
+
 import java.util.ArrayList;
 
 public class CourseProgramme {
@@ -68,6 +71,7 @@ public class CourseProgramme {
         return courseName;
     }
     public String getInfo(){
+        DateTimeFormatter fmt = DateTimeFormat.forPattern("d MMMM, yyyy");
         return "Course:"+courseName + " Start Date:" + start +" End Date:"+ end;
 
     }
