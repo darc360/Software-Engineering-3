@@ -1,3 +1,5 @@
+//Written By Darcie Howley
+//Libraries
 import org.joda.time.DateTime;
 import org.junit.Test;
 
@@ -11,12 +13,10 @@ public class StudentTest
     private String Name = "Darcie";
     private String userName = "Darcie22";
     private Student student = new Student(Name, DOB);
-
     private String newName = "Eoin";
     private String newUserName = "Eoin3";
     private int newAge = 3;
     private DateTime newDOB = new DateTime(2017,10,15,0,0);
-
     private CourseProgramme course = null;
     private ArrayList<Module> module = new ArrayList<>();
 

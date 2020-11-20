@@ -1,3 +1,4 @@
+//Written By Darcie Howley
 //libraries
 import org.junit.*;
 import org.joda.time.DateTime;
@@ -30,7 +31,6 @@ public class CourseProgrammeTest {
 
         course.setEnd(end);
         assertEquals(course.getEnd(),end);
-
     }
 
     @Test

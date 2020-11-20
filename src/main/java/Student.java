@@ -1,3 +1,4 @@
+//Written By Darcie Howley
 //libraries
 import org.joda.time.DateTime;
 import org.joda.time.Years;
@@ -69,5 +70,10 @@ public class Student {
 //add method
     public void addModule(Module module) {
         this.modules.add(module);
+    }
+
+    @Override
+    public String toString(){
+        return Name;
     }
 }

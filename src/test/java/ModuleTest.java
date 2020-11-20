@@ -1,3 +1,5 @@
+//Written By Darcie Howley
+//Libraries
 import org.joda.time.DateTime;
 import org.junit.Test;
 
@@ -12,6 +14,7 @@ public class ModuleTest {
     private ArrayList<CourseProgramme> relatedCourses = null;
     private Module module = new Module(moduleName,ID);
 
+//tests creation of Module
     @Test
     public void testModuleCreation() {
         assertTrue(module.getModuleName().equals(moduleName));

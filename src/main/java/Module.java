@@ -1,3 +1,4 @@
+
 //libraries
 import java.util.ArrayList;
 
@@ -48,5 +49,10 @@ public class Module {
 //setter
     public void setCourses(ArrayList<CourseProgramme> courses) {
         this.relatedCourses = courses;
+    }
+
+    @Override
+    public String toString(){
+        return moduleName;
     }
 }
