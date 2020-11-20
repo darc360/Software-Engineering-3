@@ -20,7 +20,7 @@ public class Student {
     public Student(String Name, DateTime DOB){
         this.Name = Name;
         this.DOB = DOB;
-        this.ID = ID++;
+        this.ID = IDs++;
         setAge();
 
 
