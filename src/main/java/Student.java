@@ -6,8 +6,8 @@ import java.util.ArrayList;
 
 public class Student {
 //declaration
-    private String Name;
-    private int Age;
+    private String name;
+    private int age;
     private DateTime DOB;
     private int ID;
     private String userName;
@@ -17,8 +17,8 @@ public class Student {
 //intialising ID as 0
     static int IDs = 0;
 //constructor
-    public Student(String Name, DateTime DOB){
-        this.Name = Name;
+    public Student(String name, DateTime DOB){
+        this.name = name;
         this.DOB = DOB;
         this.ID = IDs++;
         setAge();
@@ -27,24 +27,24 @@ public class Student {
     }
 //getter
     public String getUserName(){
-        this.userName = Name + Age;
+        this.userName = name + age;
         return userName;
     }
 //getter
     public int getAge() {
-        return Age;
+        return age;
     }
 //setter
     public void setAge(){
-        this.Age = Years.yearsBetween(DOB, new DateTime()).getYears();
+        this.age = Years.yearsBetween(DOB, new DateTime()).getYears();
     }
 //setter
     public String getName() {
-        return Name;
+        return name;
     }
 //setter
-    public void setName(String Name) {
-        this.Name = Name;
+    public void setName(String name) {
+        this.name = name;
     }
 //getter
     public DateTime getDOB() {
@@ -71,12 +71,12 @@ public class Student {
     public void addModule(Module module) {
         this.modules.add(module);
     }
-
+//toString to allow printing in driver class
     @Override
     public String toString(){
-        return Name;
+        return name;
     }
     public String getInfo(){
-        return  "Name:"+Name+" Age:"+Age +" ID"+ ID;
+        return  "Name:" + name + " Age:" + age +" ID" + ID;
     }
 }

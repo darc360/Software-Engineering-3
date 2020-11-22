@@ -1,9 +1,6 @@
 //Written By Darcie Howley
 //libraries
 import org.joda.time.DateTime;
-import org.joda.time.format.DateTimeFormat;
-import org.joda.time.format.DateTimeFormatter;
-
 import java.util.ArrayList;
 
 public class CourseProgramme {
@@ -70,6 +67,7 @@ public class CourseProgramme {
     public void setEnd(DateTime end) {
         this.end = end;
     }
+    //tostrings to allow printing in driver class
     @Override
     public String toString(){
         return courseName;

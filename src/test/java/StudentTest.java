@@ -9,10 +9,10 @@ import static org.junit.Assert.*;
 public class StudentTest
 {
     private DateTime DOB = new DateTime(1998,3,5,0,0);
-    private int Age = 22;
-    private String Name = "Darcie";
+    private int age = 22;
+    private String name = "Darcie";
     private String userName = "Darcie22";
-    private Student student = new Student(Name, DOB);
+    private Student student = new Student(name, DOB);
     private String newName = "Eoin";
     private String newUserName = "Eoin3";
     private int newAge = 3;
@@ -27,12 +27,12 @@ public class StudentTest
 
     @Test
     public void testAge(){
-        assertTrue(student.getAge() == Age);
+        assertTrue(student.getAge() == age);
     }
 
     @Test
     public void testStudentCreation(){
-        assertTrue(student.getName().equals(Name));
+        assertTrue(student.getName().equals(name));
         assertTrue(student.getDOB().equals(DOB));
     }
 
@@ -48,10 +48,10 @@ public class StudentTest
 
     @Test
     public void testModule(){
-        String Name = "Software Engineering";
+        String name = "Software Engineering";
         String ID = "CT417";
-        Module module = new Module(Name,ID);
-        Module module2 = new Module(Name,ID);
+        Module module = new Module(name,ID);
+        Module module2 = new Module(name,ID);
         student.addModule(module);
         student.addModule(module2);
         ArrayList<Module> modules = new ArrayList<>();

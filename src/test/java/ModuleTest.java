@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 
 public class ModuleTest {
 
-    private String moduleName = "Software Engineering";
+    private String moduleName = "Software Engineering III";
     private String ID = "CT417";
     private ArrayList<CourseProgramme> relatedCourses = null;
     private Module module = new Module(moduleName,ID);

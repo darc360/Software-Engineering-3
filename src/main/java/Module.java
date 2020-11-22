@@ -50,7 +50,7 @@ public class Module {
     public void setCourses(ArrayList<CourseProgramme> courses) {
         this.relatedCourses = courses;
     }
-
+//to allow for printing in driver class
     @Override
     public String toString(){
         return moduleName;
