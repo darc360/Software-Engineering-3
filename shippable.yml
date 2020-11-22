@@ -1,0 +1,16 @@
+name: Software-Engineering-3_runCI
+type: runCI
+steps:
+  - IN: Software-Engineering-3_ciRepo
+language: java
+jdk:
+  - oraclejdk11
+
+branches:
+  only:
+    - master
+
+build:
+  ci: 
+    - mvn test
+    - mvn install
