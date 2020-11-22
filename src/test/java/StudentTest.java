@@ -46,26 +46,5 @@ public class StudentTest
         assertEquals(student.getUserName(),newUserName);
     }
 
-    @Test
-    public void testModule(){
-        String name = "Software Engineering";
-        String ID = "CT417";
-        Module module = new Module(name,ID);
-        Module module2 = new Module(name,ID);
-        student.addModule(module);
-        student.addModule(module2);
-        ArrayList<Module> modules = new ArrayList<>();
-        modules.add(module);
-        modules.add(module2);
-        assertEquals(student.getModules(),modules);
 
-    }
-
-    @Test
-    public void testCourse(){
-        CourseProgramme course = new CourseProgramme("Electronic and Computer Engineering",new DateTime(2020,6,25,0,0,0), new DateTime(2021,5,25,0,0,0));
-        student.setCourse(course);
-        assertEquals(student.getCourse(),course);
-
-    }
 }

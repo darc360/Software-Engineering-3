@@ -32,34 +32,5 @@ public class ModuleTest {
         assertEquals(module.getID(),newID);
     }
 
-    @Test
-    public void testStudentAddition(){
-        Student student1 = new Student("Darcie", new DateTime(2005,10,4,0,0));
-        Student student2 = new Student("Ciaran", new DateTime(1997,10,15,0,0));
-        ArrayList<Student> students = new ArrayList();
-        students.add(student1);
-        students.add(student2);
-        module.setStudents(students);
-        assertEquals(module.getStudents(),students.toString());
-    }
 
-    @Test
-    public void testCourse(){
-        ArrayList<CourseProgramme> courses = new ArrayList<CourseProgramme>();
-        CourseProgramme course1 = new CourseProgramme("Electronic and Computer Engineering", new DateTime(2020,6,25,0,0,0),new DateTime(2021,5,25,0,0,0));
-        CourseProgramme course2 = new CourseProgramme("Biomed", new DateTime(2020,6,25,0,0,0), new DateTime(2021,5,25,0,0,0));
-
-        assertEquals(module.getCourses(),courses);
-
-        courses.add(course1);
-        module.addCourse(course1);
-
-        assertEquals(module.getCourses(),courses);
-
-        courses.add(course2);
-        module.setCourses(courses);
-
-        assertEquals(module.getCourses(),courses);
-
-    }
 }
