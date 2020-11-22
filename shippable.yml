@@ -14,3 +14,8 @@ build:
   ci: 
     - mvn test
     - mvn install
+    
+otifications:
+  email:
+    recipients:
+      d.howley4@nuigalway.ie
