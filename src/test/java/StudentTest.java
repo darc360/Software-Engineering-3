@@ -63,7 +63,7 @@ public class StudentTest
 
     @Test
     public void testCourse(){
-        CourseProgramme course = new CourseProgramme("Electronic and Computer Engineering");
+        CourseProgramme course = new CourseProgramme("Electronic and Computer Engineering",new DateTime(2020,6,25,0,0,0), new DateTime(2021,5,25,0,0,0));
         student.setCourse(course);
         assertEquals(student.getCourse(),course);
 

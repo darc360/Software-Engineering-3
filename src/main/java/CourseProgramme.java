@@ -15,10 +15,14 @@ public class CourseProgramme {
     private DateTime end;
 
 //constructor
-    public CourseProgramme(String courseName){
+
+    public CourseProgramme(String courseName, DateTime start, DateTime end) {
         this.courseName = courseName;
+        this.start = start;
+        this.end = end;
     }
-//getter
+
+    //getter
     public String getCourseName() {
         return courseName;
     }
@@ -72,7 +76,7 @@ public class CourseProgramme {
     }
     public String getInfo(){
 
-        return "Course:"+courseName + " Start Date:" + getStart() ;
+        return "Course:"+courseName + " Start Date:" + start ;
 
     }
 }

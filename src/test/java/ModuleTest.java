@@ -46,8 +46,8 @@ public class ModuleTest {
     @Test
     public void testCourse(){
         ArrayList<CourseProgramme> courses = new ArrayList<CourseProgramme>();
-        CourseProgramme course1 = new CourseProgramme("Electronic and Computer Engineering");
-        CourseProgramme course2 = new CourseProgramme("Biomed");
+        CourseProgramme course1 = new CourseProgramme("Electronic and Computer Engineering", new DateTime(2020,6,25,0,0,0),new DateTime(2021,5,25,0,0,0));
+        CourseProgramme course2 = new CourseProgramme("Biomed", new DateTime(2020,6,25,0,0,0), new DateTime(2021,5,25,0,0,0));
 
         assertEquals(module.getCourses(),courses);
 

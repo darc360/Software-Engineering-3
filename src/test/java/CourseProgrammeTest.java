@@ -9,10 +9,10 @@ public class CourseProgrammeTest {
 //creating test objects
     private String courseName = "Electronic and Computer Engineering";
     private String newcourseName = "Biomed";
-    private DateTime start = new DateTime(2019,8,30,0,0);
-    private DateTime end = new DateTime(2020,6,25,0,0);
+    private DateTime start = new DateTime(2020,6,25,0,0,0);
+    private DateTime end = new DateTime(2021,6,25,0,0);
 
-    private CourseProgramme course = new CourseProgramme(courseName);
+    private CourseProgramme course = new CourseProgramme(courseName,start,end);
 
 //testing all course functions
     @Test
