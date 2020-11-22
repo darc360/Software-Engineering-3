@@ -76,7 +76,7 @@ public class CourseProgramme {
     }
     public String getInfo(){
 
-        return "Course:"+courseName + " Start Date:" + start ;
+        return "Course:"+courseName + " Start Date:" + start.toDateTime() +" End Date:" + end.toDateTime() ;
 
     }
 }
