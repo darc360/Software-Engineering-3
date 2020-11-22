@@ -72,7 +72,7 @@ public class CourseProgramme {
     }
     public String getInfo(){
         DateTimeFormatter fmt = DateTimeFormat.forPattern("d MMMM, yyyy");
-        return "Course:"+courseName + " Start Date:" + start.toString(fmt) +" End Date:"+ end.toString(fmt);
+        return "Course:"+courseName + " Start Date:" + start.toDateTime() +" End Date:"+ end.toDateTime();
 
     }
 }
