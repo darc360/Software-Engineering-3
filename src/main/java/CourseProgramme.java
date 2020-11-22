@@ -71,10 +71,8 @@ public class CourseProgramme {
         return courseName;
     }
     public String getInfo(){
-        DateTime newdt=new  DateTime(start);
-        DateTimeFormatter formatter = DateTimeFormat.forPattern("yyyy-MM-dd'T'HH:mm:ss");
-        newdt = formatter.parseDateTime(String.valueOf(start));
-        return "Course:"+courseName + " Start Date:" + newdt.toDateTime() ;
+
+        return "Course:"+courseName + " Start Date:" + getStart() ;
 
     }
 }
